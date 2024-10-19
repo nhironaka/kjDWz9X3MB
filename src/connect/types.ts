@@ -1,4 +1,8 @@
 import { type ConstValues } from '@shared/types/utils';
-import { type colors } from './constants';
+import { type TOKENS } from './constants';
 
-export type Color = ConstValues<typeof colors>;
+export type Token = ConstValues<typeof TOKENS>;
+export interface Coord {
+  x: number;
+  y: number;
+}
